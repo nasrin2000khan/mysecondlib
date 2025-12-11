@@ -26,7 +26,14 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+// Add this block for JitPack
+publishing {
+    singleVariant("release")  // <-- use double quotes, NOT single quotes
 }
+}
+
+
 
 dependencies {
 
